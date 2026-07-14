@@ -43,7 +43,13 @@
     position: fixed;
     background-color: #a7a7a7;
     left: 50%; top: 50% ;
-    transform: translateX(-50%. -50%;)
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+}
+/* 실험코드 -> 실무 코드x */
+body{height: 100vh;}
+body:hover .box1 {
+    transform: translate(-40%, -40%);
 }
 .box2 {
     position: absolute;
