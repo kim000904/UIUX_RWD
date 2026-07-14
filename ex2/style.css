@@ -1,6 +1,7 @@
 .line1 {
     border-top: 1px solid #000;
     position: relative;
+    transform: translateY(25px);
 }
 .width {
     position: absolute;
@@ -8,10 +9,12 @@
     transform: translate(-50%, 100px);
     left: 50%;
 }
-.h-1n1, .h-1n2, .h-1n3,.h-1n4 {
+.h-1n1, .h-1n2, .h-1n3, .h-1n4 {
     position: absolute;
     border: 1px solid #000;
     height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
 } 
 .h-1n1 {
     left: 360px;
@@ -24,4 +27,37 @@
 }
 .h-1n4 {
     left: 1440px;
+}
+.h-1n::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h-1n1::after {content: "360";}
+.h-1n2::after {content: "760";}
+.h-1n3::after {content: "1080";}
+.h-1n4::after {content: "1440";}
+.box1 {
+    width: 300px; height: 300px;
+    position: fixed;
+    background-color: #a7a7a7;
+    left: 50%; top: 50% ;
+    transform: translateX(-50%. -50%;)
+}
+.box2 {
+    position: absolute;
+    width: 61px; height: 20px;
+    background-color: green;
+    top: 26px; left: 1440px;
+    transform: translateX(-50%);
+}
+.box2:hover {
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 1080px) {
+    .box2 {
+        left:1080px;
+    }
 }
