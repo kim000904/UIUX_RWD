@@ -1,0 +1,27 @@
+.line1 {
+    border-top: 1px solid #000;
+    position: relative;
+}
+.width {
+    position: absolute;
+    /* transform: translate(x,y); */
+    transform: translate(-50%, 100px);
+    left: 50%;
+}
+.h-1n1, .h-1n2, .h-1n3,.h-1n4 {
+    position: absolute;
+    border: 1px solid #000;
+    height: 50px;
+} 
+.h-1n1 {
+    left: 360px;
+}
+.h-1n2 {
+    left: 760px;
+}
+.h-1n3 {
+    left: 1080px;
+}
+.h-1n4 {
+    left: 1440px;
+}
