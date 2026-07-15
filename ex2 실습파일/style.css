@@ -1,0 +1,51 @@
+.line1 {
+    border-top: 1px solid#000;
+    position: relative;
+    transform: translatey(25px);
+}
+.width {
+    position: absolute;
+    /* transform: translate(x,y 의 ); */
+    transform: translate(-50%,100px);
+    left: 50%; 
+}
+.h-1n::after {
+    position: absolute;
+}
+.h-1n1::after {content: "360";}
+.h-1n2::after {content: "760";}
+.h-1n3::after {content: "1080";}
+.h-1n4::after {content: "1440";}
+.h-1n1,.h-1n2, .h-1n3, .h-1n4 {
+    position: absolute;
+    border-right: 1px solid #000;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+.h-1n1 {
+    left: 360px;
+}
+.h-1n2 {
+    left: 760px;
+}
+.h-1n3 {
+    left: 1080px;
+}
+.h-1n4 {
+    left: 1440px;
+}
+.box1 {
+    width: 300px; height: 300px;
+    position: fixed;
+    background-color: gray;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.box2 {
+    width: 61px; height: 20px;
+    background-color: green;
+    position: absolute;
+    top:26px; left: 361px;
+    transform: translatex(-50%);
+}

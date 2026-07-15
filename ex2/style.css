@@ -39,6 +39,7 @@
 .h-1n3::after {content: "1080";}
 .h-1n4::after {content: "1440";}
 .box1 {
+    /* 움직이는 회색상자 */
     width: 300px; height: 300px;
     position: fixed;
     background-color: #a7a7a7;
