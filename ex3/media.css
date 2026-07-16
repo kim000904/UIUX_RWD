@@ -1,0 +1,13 @@
+/* 실무 기준에서는 360 사이즈에서 가장 많이 디자인 함 */
+/* 포트폴리오에선 화면이 길어야 예쁨 320*720 */
+/* 0~320 */
+@media screen and (max-width: 320px) {
+    header {
+        height: 100px;
+        background-color: #868686;
+    }
+    footer {
+        height: 210px;
+        background-color: #868686;
+    }
+}
